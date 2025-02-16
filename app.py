@@ -7,10 +7,10 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 # Initialize Flask app
 app = Flask(__name__)
-app.secret_key = "AIzaSyAUe5NcRRE0PaXRHYJSVyk3MM33wtXZZ4c"  # Required for using sessions
+app.secret_key = "secret_key"  # Required for using sessions
 
 # Configure Gemini API
-API_KEY = "AIzaSyAUe5NcRRE0PaXRHYJSVyk3MM33wtXZZ4c"  # Replace with your actual API key
+API_KEY = "secret_key"  # Replace with your actual API key
 genai.configure(api_key=API_KEY)
 
 # Function to initialize the SQLite database
